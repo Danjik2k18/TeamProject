@@ -34,11 +34,15 @@ a:active {
   color: inherit;
 }
 
+img {
+    object-fit: contain;
+}
+
 /*END Basic options*/
 
 .container {
-    margin: 0 auto;
-    width: 1200px;
+  margin: 0 auto;
+  width: 1200px;
 }
 
 body {
@@ -50,7 +54,10 @@ body {
 }
 header {
   min-width: 320px;
-  background-color: #377ec0;
+  background-image: url(../images/headerPhoto1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
   width: 100%;
   height: 400px;
   z-index: 2;
@@ -70,118 +77,370 @@ footer {
 /* Block 1 */
 
 .info {
-    padding: 55px 0 55px 0;
+  padding: 55px 0 55px 0;
 }
 
 .info-title h1 {
-    font-weight: 700;
-    font-size: 50px;
-    font-family: "Arial";
-    color: #fff;
-    text-transform: uppercase;
+  font-weight: 700;
+  font-size: 50px;
+  font-family: "Arial";
+  color: #fff;
+  text-transform: uppercase;
 }
 
 .info-text p {
-    font-size: 18px;
-    color: #fff;
-    letter-spacing: 1px;
+  font-size: 18px;
+  color: #fff;
+  letter-spacing: 1px;
 }
 
 .info-btn {
-    margin-top: 70px;
+  margin-top: 70px;
 }
 
 .info-btn a {
-    background: #fff;
-    padding: 20px 70px 20px 70px;
-    border-radius: 3px;
-    text-transform: uppercase;
-    font-weight: 600;
+  background: #fff;
+  padding: 20px 70px 20px 70px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 /* Block 2 */
 
 .blockTwo {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 50px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 50px 0 0 0;
 }
 
 .blockTwo-left {
-    width: 50%;
+  width: 50%;
 }
 
 .blockTwo-left h2 {
-    text-transform: uppercase;
-    font-weight: 100;
-    font-size: 30px;
-    line-height: 35px;
-    letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 30px;
+  line-height: 35px;
+  letter-spacing: 1px;
 }
 
 .blockTwo-left .dashedBtn {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .blockTwo-left .dashedBtn a {
-    padding: 25px 120px 25px 120px;
-    border: 2px dashed #00AEEA;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: #00AEEA;
-    letter-spacing: 0.1em;
-    font-size: 20px;
+  padding: 25px 120px 25px 120px;
+  border: 2px dashed #00aeea;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #00aeea;
+  letter-spacing: 0.1em;
+  font-size: 20px;
 }
 
 .blockTwo-left .blueBtn {
-    margin-top: 80px;
+  margin-top: 80px;
 }
 
-.blockTwo-left .blueBtn a{
-    background: #00AEEA;
-    padding: 20px 70px 20px 70px;
-    border-radius: 3px;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: #fff;
+.blockTwo-left .blueBtn a {
+  background: #00aeea;
+  padding: 20px 70px 20px 70px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fff;
 }
 
 .blockTwo-left p {
-    margin-top: 40px;
-    color: #999999;
+  margin-top: 40px;
+  color: #999999;
 }
 .blockTwo-right {
-    width: 50%;
+  width: 50%;
 }
 
 .right-column {
-    display: flex;
+  display: flex;
 }
 
 .right-column img {
-    object-fit: contain;
+  object-fit: contain;
 }
 
 img.bottleOne {
-    margin-top: -200px;
-    width: 100%;
-    max-width: 200px;
-    z-index: 1;
+  margin-top: -200px;
+  width: 100%;
+  max-width: 200px;
+  z-index: 1;
 }
 
 img.bottleTwo {
-    width: 100%;
-    max-width: 300px;
+  width: 100%;
+  max-width: 300px;
 }
 
 img.bottleThree {
-    width: 100%;
-    max-width: 100px;
+  width: 100%;
+  max-width: 100px;
+  z-index: 1;
 }
 
 img.bottleFour {
-    width: 100%;
-    max-width: 150px;
-    margin-left: 100px;
+  width: 100%;
+  max-width: 150px;
+  margin-left: 100px;
+  z-index: 1;
+}
+
+/*3 block*/
+
+.buyblock {
+  background: linear-gradient(
+    183.88deg,
+    #6aa3e4 2.92%,
+    #74a9ea 28.31%,
+    #7aafed 52.68%,
+    #7aadec 74.67%,
+    #76a9ea 96.59%
+  );
+  margin-top: -150px;
+  z-index: 3;
+  position: relative;
+}
+
+.buy {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.buy-image1 {
+  z-index: 1;
+  position: absolute;
+  width: 200px;
+  height: 103.25px;
+  left: 120px;
+  transform: rotate(-10.71deg);
+}
+
+.buy-image2 {
+  z-index: 2;
+  position: relative;
+}
+
+.buy-image3 {
+  z-index: 1;
+  position: absolute;
+  width: 177.99px;
+  height: 97.86px;
+  left: 100px;
+  top: 200px;
+  transform: rotate(5deg);
+}
+
+.buyblock-text-image {
+  z-index: 2;
+  position: absolute;
+  top: 90px;
+  left: 180px;
+}
+
+.buyblock-text {
+  font-family: Arial, sans-serif;
+  z-index: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  top: -25px;
+}
+
+/*Попробуйте комплесный уход*/
+.buyblock-text h2 {
+  margin-top: 5px;
+  width: 296px;
+  height: 67px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/*Комплексный уход*/
+.buyblock-text p {
+  font-weight: bold;
+}
+
+/*для сверхчувствительной и склонной к аллергии коже*/
+.buyblock-text h3 {
+  padding-top: 10px;
+  width: 346px;
+  height: 66px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #f2f3f4;
+}
+
+/*По специальной цене*/
+.buyblock-text-p {
+  font-weight: bold;
+  color: #fff;
+}
+
+/*1679 руб.*/
+.buyblock-textp {
+  width: 225px;
+  height: 19px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 22px;
+  color: #ffffff;
+  padding-top: 20px;
+}
+.buyblock-texta {
+  margin-top: 40px;
+}
+/*КНОПКА*/
+.button {
+  border: 1px solid #fff; /* Рамка */
+  display: inline-block;
+  width: 230px;
+  height: 50px;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none; /* Убираем подчёркивание */
+  color: #00aeea; /* Цвет текста */
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+/* Section Items */
+.items_section {
+  padding: 45px 0;
+}
+
+.items_section h3,
+.items_section h4,
+.items_section button {
+  text-transform: uppercase;
+}
+
+.items_section h3 {
+  margin-bottom: 20px;
+}
+
+.items_list {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 40px;
+}
+
+.item {
+  position: relative;
+}
+
+.hidden {
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+}
+
+.item h4 {
+  font-family: Frutiger Neue LT W1G;
+  font-style: normal;
+  font-weight: bold;
+  color: #00a7ff;
+
+  margin: 20px 0 10px;
+}
+
+.item .item_txt {
+  font-family: Trebuchet MS;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 141.7%;
+
+  margin-bottom: 25px;
+}
+
+.item .points {
+  color: #00aeea;
+
+  margin-bottom: 5px;
+}
+
+.item .cost {
+  font-weight: bold;
+  color: #333333;
+
+  margin-bottom: 5px;
+}
+
+.but_buy {
+  color: #00aeea;
+  font-family: Gill Sans;
+  font-size: 14px;
+  border: 1px solid #00aeea;
+  box-sizing: border-box;
+  border-radius: 3px;
+  background-color: inherit;
+
+  line-height: 50px;
+  width: 100%;
+}
+
+.but_buy a {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.centr_but {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.but_more {
+  color: #ffffff;
+  font-family: Gill Sans;
+  font-size: 14px;
+  background: #00aeea;
+  border: 1px solid #00aeea;
+  box-sizing: border-box;
+  border-radius: 3px;
+
+  width: 40%;
+  line-height: 50px;
+}
+
+.but_more a {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.footer_txt {
+  margin-top: 25px;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+}
+
+.block_size_medium {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
 }
