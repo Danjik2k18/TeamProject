@@ -19,7 +19,7 @@
   margin: 0;
   padding: 0;
   outline: none;
-  font-family: "Bebas Neue";
+  font-family: "Arial";
 }
 
 a {
@@ -46,12 +46,15 @@ body {
   width: 100vw;
   height: 100vh;
   min-width: 320px;
+  overflow-x: hidden;
 }
 header {
   min-width: 320px;
   background-color: #377ec0;
   width: 100%;
-  height: 350px;
+  height: 400px;
+  z-index: 2;
+  position: relative;
 }
 main {
   position: relative;
@@ -60,6 +63,125 @@ main {
 footer {
   min-width: 320px;
   position: fixed;
+  background-color: #999999;
+  height: 400px;
 }
 
-/*  */
+/* Block 1 */
+
+.info {
+    padding: 55px 0 55px 0;
+}
+
+.info-title h1 {
+    font-weight: 700;
+    font-size: 50px;
+    font-family: "Arial";
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.info-text p {
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.info-btn {
+    margin-top: 70px;
+}
+
+.info-btn a {
+    background: #fff;
+    padding: 20px 70px 20px 70px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* Block 2 */
+
+.blockTwo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px 0 0 0;
+}
+
+.blockTwo-left {
+    width: 50%;
+}
+
+.blockTwo-left h2 {
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 1px;
+}
+
+.blockTwo-left .dashedBtn {
+    margin-top: 50px;
+}
+
+.blockTwo-left .dashedBtn a {
+    padding: 25px 120px 25px 120px;
+    border: 2px dashed #00AEEA;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #00AEEA;
+    letter-spacing: 0.1em;
+    font-size: 20px;
+}
+
+.blockTwo-left .blueBtn {
+    margin-top: 80px;
+}
+
+.blockTwo-left .blueBtn a{
+    background: #00AEEA;
+    padding: 20px 70px 20px 70px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+}
+
+.blockTwo-left p {
+    margin-top: 40px;
+    color: #999999;
+}
+.blockTwo-right {
+    width: 50%;
+}
+
+.right-column {
+    display: flex;
+}
+
+.right-column img {
+    object-fit: contain;
+}
+
+img.bottleOne {
+    margin-top: -200px;
+    width: 100%;
+    max-width: 200px;
+    z-index: 1;
+}
+
+img.bottleTwo {
+    width: 100%;
+    max-width: 300px;
+}
+
+img.bottleThree {
+    width: 100%;
+    max-width: 100px;
+}
+
+img.bottleFour {
+    width: 100%;
+    max-width: 150px;
+    margin-left: 100px;
+}
